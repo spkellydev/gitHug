@@ -1,4 +1,4 @@
-Octogotcha powered by GitHug - Catalyzed by Gulp, Jekyll, Pug, Sass, Particle, with AutoPrefixer &amp; BrowserSync
+Octogotcha powered by GitHug (Gulp, Jekyll, Pug, Sass, Particle, with AutoPrefixer &amp; BrowserSync)
 =============================
 
 This project utilizes front-end technologies with the Particle Photon Board. The user is able to send or recieve a hug digitally. The project was intended to create an anti-harassment program for buddy-clients of the Particle Photon
