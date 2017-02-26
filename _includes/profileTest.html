@@ -48,16 +48,7 @@
 }
 function timing(){
   document.getElementById('screen').style.backgroundImage = "url('img/octohug.png')";
-  $.ajax({
-        url: "https://api.particle.io/v1/devices/2f0021000547353138383138/led?access_token=150a347fb4277975913f5dfe24e2fb739171b3c5",
-        method: "GET",
-        headers: { "Accept": "application/json; odata=verbose" },
-        success: function (data) {
-           console.log(JSON.stringify(data.d.results));
-        },
-        error: function (data) {
-           console.log(JSON.stringify(data));
-        }
+  location.reload();
 });
 }
 
