@@ -44,6 +44,6 @@ gulp.task("deploy", ["jekyll-build"], function () {
         .pipe(deploy());
 });
 ```
-## GitHug Octogothcha
+## Octogothcha
 
 The Octogotcha, powered by GitHug, is a program for buddy-clients with Particle Photon boards. The project is intended to send hugs digitally to people whom broadcast that they need a hug with digital signals. Hack Harassment is a coalition of organizations and individuals who share in the common goal of building a more inclusive and supportive online community. We are attempting to bridge the gap between the solace associated with breadboard testing and the bullying that can come attached in some cases. 
