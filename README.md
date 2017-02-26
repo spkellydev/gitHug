@@ -1,7 +1,7 @@
-jekyll-gulp-sass-browser-sync
+GitHub - Powered by Gulp, Jekyll, Pug, Sass, Particle, with AutoPrefixer &amp; BrowserSync
 =============================
 
-A starter project including full setup for Jekyll, GulpJS, SASS, AutoPrefixer &amp; BrowserSync, and Pug
+This project utilizes front-end technologies with the Particle Photon Board. The user is able to send or recieve a hug digitally. The project was intended to create an anti-harassment program for buddy-clients of the Particle Photon
 
 ## System Preparation
 
