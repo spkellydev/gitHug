@@ -1,0 +1,65 @@
+<img class="git-hug" src="img/GitHub-logo.png">
+<p class="power">Powered By Git-Hug</p>
+<div class="profile-head">
+  <h1 class="user-name">Octogotcha</h1>
+  <div id="screen" style="background-image: url('img/octobiwan.png')"></div>
+
+  <form id="forms" action="https://api.particle.io/v1/devices/2f0021000547353138383138/led?access_token=150a347fb4277975913f5dfe24e2fb739171b3c5" method="POST"  target="iframe">
+    <a href="http://www.hackharassment.com/" target="_blank" class="hh">End Harrassment, Send a Hug</a><br>
+<div class="center-me">
+  <input id="send-hug" type="radio" name="arg" value="sendHug" onClick="changeImage('b')">Send a Hug
+  <br>
+  <input class="need-hug" type="radio" name="arg" value="getHug" onClick="changeImage('r')">I Need A Hug
+  <br>
+  <input class="mixed-feels" type="radio" name="arg" value="allSwap" onClick="changeImage('p')">I don't know how to feel
+  <br>
+  <br>
+    </div>
+  <input class="btn" type="submit" value="Do it!" onclick="setTimeout(timing, 5000);">
+</form>
+
+<br>
+</center>
+<iframe name="iframe" class="iframe"></iframe>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+    document.getElementById('forms').submit();
+
+    function changeImage(value)
+{
+    var image = document.getElementById('screen').style.backgroundImage;
+    switch(value)
+    {
+        case 'b':
+            image = "url('img/jetpacktocat.png')";
+        break;
+        case 'r':
+            image = "url('img/droctocat.png')";
+        break;
+        case 'p':
+            image = "url('img/strongbad.png')";
+        break;
+    }
+    document.getElementById('screen').style.backgroundImage = image;
+
+}
+function timing(){
+  document.getElementById('screen').style.backgroundImage = "url('img/octohug.png')";
+  $.ajax({
+        url: "https://api.particle.io/v1/devices/2f0021000547353138383138/led?access_token=150a347fb4277975913f5dfe24e2fb739171b3c5",
+        method: "GET",
+        headers: { "Accept": "application/json; odata=verbose" },
+        success: function (data) {
+           console.log(JSON.stringify(data.d.results));
+        },
+        error: function (data) {
+           console.log(JSON.stringify(data));
+        }
+});
+}
+
+</script>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE>
+<html>
+  <body>
+  <center>
+  <br>
+  <br>
+  <br>
+  <form id="forms" action="https://api.particle.io/v1/devices/2f0021000547353138383138/led?access_token=150a347fb4277975913f5dfe24e2fb739171b3c5" method="POST"  target="iframe">
+    Tell your device what to do!<br>
+
+    <input class="send-hug" type="radio" name="arg" value="blueSwap">Send a Hug
+    <br>
+    <input class="need-hug" type="radio" name="arg" value="redSwap">I Need A Hug
+    <br>
+    <input class="mixed-feels" type="radio" name="arg" value="allSwap">I don't know how to feel
+    <br>
+    <br>
+    <input type="submit" value="Do it!">
+  </form>
+  <br>
+  </center>
+  <iframe name="iframe" class="iframe"></iframe>
+  <script type="text/javascript">
+      document.getElementById('forms').submit();
+  </script>
+
+  </body>
+</html>
